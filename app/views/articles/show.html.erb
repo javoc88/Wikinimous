@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <h1> <%= @article.title %> </h1>
+
+    <%= link_to edit_article_path(@article) do %>
+      <button type="button" class="btn btn-outline-secondary">Edit this article <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+    <% end %>
+    <p><%= @article.content %></p>
+
+  <p><%= link_to "Back", articles_path, class:"btn btn-primary" %></p>
+</div>
